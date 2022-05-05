@@ -5,15 +5,12 @@ chrome_driver_path = "C:/Users/Manigandan/Documents/chromedriver_win32/chromedri
 driver=webdriver.Chrome(chrome_driver_path)
 
 driver.implicitly_wait(10)
-driver.get("https://flippingbook.com/")
+driver.get('https://google.co.in/')
 
 links=driver.find_elements(By.TAG_NAME,"a")
 
 print(len(links))
 
 for link in links:
-    r = requests.head(link.get_attribute('href')
-    if r.status_code!=200:
-       driver.get(link)
-    else:
-        print(str(link) + " isn't available.")
+    r = requests.head(link.get_attribute("href"))
+    print(link.get_attribute('href'), r.status_code)

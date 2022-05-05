@@ -15,13 +15,13 @@ driver.find_element(By.XPATH, "//*[@id='treemenu']/li/ul/li[1]/ul/li[4]/a").clic
 element=driver.find_element(By.ID, "select-demo")
 drp=Select(element)
 
-#drp.select_by_visible_text("FridaDropdown.py")
+#drp.select_by_visible_text("Friday")
 #drp.select_by_index(6)
 drp.select_by_value("Saturday")
 
 print(len(drp.options))
 
-all_options=drp.options
+options=drp.options
 
-for option in all_options:
+for option in options:
     print(option.text)

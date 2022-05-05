@@ -1,5 +1,8 @@
 import unittest
 
+import HtmlTestRunner
+
+
 def setupModule():
     print("setupmodule")
 def teardownModule():
@@ -36,4 +39,4 @@ class AppTesting(unittest.TestCase):
         print("This is postpaid Recharge test")
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output='C:/Users/Manigandan/PycharmProjects/selenium/Reports'))

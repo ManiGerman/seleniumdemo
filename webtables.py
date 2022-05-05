@@ -6,6 +6,7 @@ driver = webdriver.Chrome("C:/Users/Manigandan/Documents/chromedriver_win32/chro
 driver.get("https://www.techlistic.com/p/demo-selenium-practice.html")
 driver.maximize_window()
 
+
 rows=len(driver.find_elements(By.XPATH, "//*[@id='customers']/tbody/tr"))
 cols=len(driver.find_elements(By.XPATH, "//*[@id='customers']/tbody/tr[1]/th"))
 
