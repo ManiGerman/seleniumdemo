@@ -14,8 +14,8 @@ print(rows)
 print(cols)
 
 
-for r in range(1,rows+1):
-    for c in range(1,cols+1):
-        print(sheet.cell(row=r,column=c).value,end="    ")
-
-    print()
+# for r in range(1,rows+1):
+#     for c in range(1,cols+1):
+#         print(sheet.cell(row=r,column=c).value,end="    ")
+#
+#     print()

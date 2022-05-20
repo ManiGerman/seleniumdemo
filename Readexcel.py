@@ -11,9 +11,9 @@ cols=sheet.max_column
 
 print(rows)
 print(cols)
-
-for r in range(1,rows+1): #outer for loop
-    for c in range(1,cols+1): #inner for loop
-        print(sheet.cell(row=r,column=c).value,end="  ")
-
-    print()
+#
+# for r in range(1,rows+1): #outer for loop
+#     for c in range(1,cols+1): #inner for loop
+#         print(sheet.cell(row=r,column=c).value,end="  ")
+#
+#     print()

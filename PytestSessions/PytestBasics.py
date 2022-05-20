@@ -1,6 +1,15 @@
+#GROUPING or MARKING
 import pytest
 
-#start with test
-#or
-#End with test
+@pytest.mark.Child
+def test_name():
+       print("mani")
+@pytest.mark.Child
+def test_name1():
+    print("JAYA")
+@pytest.mark.Child
+def test_name2():
+    print("NILA")
 
+def test_name3():
+    print("BOY")
