@@ -16,6 +16,8 @@ sanitytestsuite=unittest.TestSuite([tc1,tc2])   # sanity test suite
 functionalTestSuite=unittest.TestSuite([tc3,tc4])
 masterTestsuite=unittest.TestSuite([tc1,tc2,tc3,tc4])
 
-unittest.TextTestRunner(verbosity=2).run(masterTestsuite)
+unittest.TextTestRunner(verbosity=2).run(sanitytestsuite)
+# unittest.TextTestRunner(verbosity=2).run(functionalTestSuite)
+# unittest.TextTestRunner(verbosity=2).run(masterTestsuite)
 
 
