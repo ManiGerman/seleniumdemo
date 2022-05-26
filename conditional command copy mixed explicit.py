@@ -7,7 +7,7 @@ import time
 
 driver = webdriver.Chrome(executable_path="C:/Users/Manigandan/Documents/chromedriver_win32/chromedriver.exe")
 
-driver.implicitly_wait(5)
+driver.
 
 driver.get("http://webdriveruniversity.com/index.html")
 

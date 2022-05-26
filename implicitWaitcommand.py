@@ -7,8 +7,7 @@ import time
 driver = webdriver.Chrome(executable_path="C:\Drivers\chromedriver_win32\chromedriver.exe")
 
 driver.get("https://test.buzzwallet.live/")
-
-implicitly_wait(10)
+driver.implicitly_wait(10)
 
 print(driver.title)
 print(driver.current_url)
